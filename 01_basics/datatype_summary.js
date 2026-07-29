@@ -42,3 +42,27 @@ console.log("Hello World.");
 // console.log(typeof heros)
 // console.log(typeof obj);
 
+
+// ++++++++++++++++++++ Memory Type +++++++++++++++++++++++++
+
+// Stack Memory (Primitive) 'copy' , Heap Memory (Non primitive) 'reference'
+
+let myBlahname = "hehe@google.com"
+
+let myWhatname = myBlahname
+myWhatname = "aha@google.com"
+
+console.log(myBlahname);
+console.log(myWhatname);
+
+
+let userOne = {
+    email:"seesaw@google.com",
+}
+
+let userTwo = userOne
+userTwo.email = "swing@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
